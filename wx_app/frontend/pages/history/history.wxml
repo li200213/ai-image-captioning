@@ -1,0 +1,24 @@
+<wxs module="fn">
+  module.exports = {
+    split : function(str){
+      return str.split(';')
+    }
+  }
+</wxs>
+<view style="padding: 10px;">
+  <view wx:if="{{history_list}}">
+    <view wx:for='{{history_list}}' wx:for-item="history" wx:key='*this' style="margin-bottom: 20px;">
+      <label style="background-color: blanchedalmond;display: block;height:30px;line-height: 30px;">{{history.time}}</label>
+      <label style="display: block;">上传的图片：</label>
+      <block wx:for="{{fn.split(history.img_src)}}" wx:for-item="item" wx:key="index" style="width: 100%;height: fit-content;margin-top: 5px;">
+        <image src="{{item}}" style="width:33.33333333%;height:200rpx;display: inline-block;" ></image>
+      </block>
+      <label style="display: block;">配文类型：{{history.text_type}}</label>
+      <label style="display: block;">情绪：{{history.emotion}}</label>
+      <label style="display: block;">配文：{{history.text}}</label>
+    </view>
+  </view>
+  <view wx:else>
+    <label style="display: block;width: fit-content;height: fit-content;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);">暂无记录</label>
+  </view>
+</view>

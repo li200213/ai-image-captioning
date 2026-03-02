@@ -1,0 +1,10 @@
+<view>
+   <label class="title">注册</label>
+ <view class="register_box">
+   <input class = "un_input" type="text" bindinput="usernameInput" placeholder="请输入用户名"/>
+   <input class = "pw_input" type="password" bindinput="passwordInput" placeholder="请输入密码（小于12位）"/>
+   <button class= "register_btn" disabled="{{enter}}" bindtap="post">注册</button>
+   <text class="tip">{{register_tip}}</text>
+ </view>
+  
+ </view>

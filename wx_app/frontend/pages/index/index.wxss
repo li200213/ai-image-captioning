@@ -1,0 +1,17 @@
+
+.img{
+  height: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+.section{
+  margin-bottom: 20px;
+}
+.section__title{
+  margin-bottom: 16rpx;
+}
+.picker{
+padding: 26rpx;
+background-color:darkgray;
+}

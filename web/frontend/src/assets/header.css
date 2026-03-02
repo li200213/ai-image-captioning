@@ -1,0 +1,66 @@
+/* src/assets/common-layout.css */
+
+/* 1. 页面整体容器：灰色背景，全屏高度 */
+.home-container {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 2. 顶部导航栏样式 */
+.header {
+  height: 60px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between; /* 左右两端对齐 */
+  align-items: center;            /* 垂直居中 */
+  padding: 0 40px;                /* 左右内边距 */
+  position: sticky;               /* 吸顶效果 */
+  top: 0;
+  z-index: 100;
+}
+
+/* 左侧 Logo */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #409EFF; /* 品牌色 */
+  letter-spacing: 1px;
+}
+
+/* 右侧用户区域 */
+.user-area {
+  display: flex;
+  align-items: center;
+}
+
+/* 下拉菜单触发区域（头像+名字） */
+.el-dropdown-link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #606266;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.el-dropdown-link:hover {
+  color: #409EFF;
+}
+
+.username {
+  margin: 0 8px; /* 名字和头像之间的距离 */
+  font-weight: 500;
+}
+
+/* 3. 主体内容区域限制宽度 */
+.main-content {
+  flex: 1; /* 撑满剩余高度 */
+  width: 100%;
+  max-width: 1000px; /* 限制最大宽度，防止在大屏太宽 */
+  margin: 30px auto; /* 居中 */
+  padding: 0 20px;
+  box-sizing: border-box;
+}

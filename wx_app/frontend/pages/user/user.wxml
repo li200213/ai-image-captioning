@@ -1,0 +1,16 @@
+<!--pages/user/user.wxml-->
+<view style="margin-top: 20px;margin-left: 10px;margin-right: 10px;">
+  <view>
+    <label>用户名：{{username}}</label>
+  </view>
+  <view style="margin-top: 10px;">
+    <label>密码：{{password}}</label>
+    <navigator url="" style="font-size: 13px;color: blue;display: inline-block;float: inline-end;" bindtap="toggleHidden">修改</navigator>
+  </view>
+<view style="margin-top: 10px;" hidden="{{isHidden}}">
+  <input type="password" bindinput="new_passwordInput" placeholder="请输入密码" style="border: black solid 1px;border-radius: 5px;width: 200px;height: 30px;display: inline-block;"/>
+  <button disabled="{{update}}" bindtap="post" style="width:80px;font-size: 13px;display: inline-block;float: right;">确认</button>
+</view>
+<label style="color: red;">{{update_tip}}</label>
+</view>
+

@@ -1,0 +1,11 @@
+<view>
+   <label class="title">登录</label>
+ <view class="login_box">
+   <input class = "un_input" type="text" bindinput="usernameInput" placeholder="请输入用户名"/>
+   <input class = "pw_input" type="password" bindinput="passwordInput" placeholder="请输入密码（小于12位）"/>
+   <button class= "login_btn" disabled="{{enter}}" bindtap="post">登录</button>
+   <navigator class = "register_btn" url="/pages/register/register" >未注册?</navigator>
+   <text class="tip">{{login_tip}}</text>
+ </view>
+  
+ </view>

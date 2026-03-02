@@ -1,0 +1,48 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/login/login",
+    "pages/register/register",
+    "pages/index/index",
+    "pages/history/history",
+    "pages/user/user",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "color": "#000000",  
+    "selectedColor": "#00BFFF",
+    "backgroundColor": "#FFFFFF",  
+    "borderStyle": "black",  
+    "position": "bottom", 
+    "custom": false, 
+    "list": [  
+      {
+        "pagePath": "pages/index/index",  
+        "text": "首页", 
+        "iconPath": "static/img/index.png", 
+        "selectedIconPath": "/static/img/selected_index.png"  
+      },
+      {
+        "pagePath": "pages/history/history",  
+        "text": "历史记录", 
+        "iconPath": "static/img/history.png", 
+        "selectedIconPath": "/static/img/selected_history.png"  
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "static/img/user.png",
+        "selectedIconPath": "/static/img/selected_user.png"
+      }
+    ]
+},
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小李测试站",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

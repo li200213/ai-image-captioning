@@ -1,0 +1,46 @@
+
+.title{
+  display:block;
+  width:max-content;
+  height:50px;
+  margin:0 auto;
+  font-size: 20px;
+}
+
+.login_box{
+  display:block;
+  margin-top: 50px;
+}
+
+.un_input{
+  width: max-content;
+  height:30px;
+  padding-left: 30px;
+}
+.pw_input{
+  width:max-content;
+  height:30px;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+.login_btn{
+  margin-top: 50px;
+  background-color: deepskyblue;
+}
+.register_btn{
+  width: max-content;
+  height: 20px;
+  margin: 0 auto;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.tip{
+  display: block;
+  width:max-content;
+  height:50px;
+  text-align: center;
+  margin:0 auto;
+  margin-top: 100px;
+  color: red;
+}
